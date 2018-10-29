@@ -14,10 +14,8 @@ def read_spect_matrix(audio_file_list):
 		chunk = AudioSegment.from_file(file, "mp4")
 		new_file, filename = tempfile.mkstemp()
 		chunk.export(filename, format="wav")
-		
 		sample_rate, samples = wavfile.read(filename)
 		frequencies, times, spectrogram = signal.spectrogram(samples, sample_rate)
-		print(spectrogram.shape)
 		data.append(spectrogram)
 		os.close(new_file)
 		
