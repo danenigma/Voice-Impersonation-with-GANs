@@ -23,7 +23,7 @@ def read_spect_matrix(audio_file_list):
 	
 if __name__ == '__main__':
 
-	audio_file_list = ['../data/00001.m4a']*10	
+	audio_file_list = ['data/00001.m4a']*10	
 	data = read_spect_matrix(audio_file_list)
 	
 	'''
