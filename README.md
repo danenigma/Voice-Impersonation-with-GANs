@@ -1,1 +1,1 @@
-# -Voice-Impersonation-with-GANs
+# Voice-Impersonation-with-GANs
